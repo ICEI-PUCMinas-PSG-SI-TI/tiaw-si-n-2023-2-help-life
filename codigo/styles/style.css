@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  form h2 {
+    margin: 0 0 20px 0;
+    color: #ffffff;
+  }
+
+  .input-container {
+    text-align: center;
+    margin: 0 0 15px 0; /* Espaçamento vertical entre cada item do formulário */
+  }
+
+  .input-container #remember-me{
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .input-container #forgot-password-linkremember-me{
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+  }
+
+  input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #757575; /* Adicionar linha preta na parte inferior */
+    font-size: 16px;
+    text-align: center; /* Centralizar o texto horizontalmente */
+    outline: none; /* Remover a borda quando selecionado */
+  }
+
+  button {
+    width: 30%;
+    padding: 10px;
+    background-color: #ED274A;
+    border: none;
+    border-radius: 50px; /* Definindo a forma oval */
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  #forgot-password-link {
+    text-decoration: none;
+    color: #8C36FB;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .menu-button {
+    background-color: transparent;
+    border: 5px;
+    color: #797979;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 45px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 50px;
+}
+.header-buttons {
+  display: flex;
+  
+  margin-left: auto;
+}
+
+#login-button {
+  background-color: #ED274A;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 50px;
+ 
+}
+
+form h1 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+body, html{
+  height: 100%;
+}
+
+input[type="text"] {
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+

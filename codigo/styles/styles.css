@@ -1,0 +1,104 @@
+/* CSS para o formulário de cadastro */
+#register-form {
+    text-align: center;
+  }
+
+  .register-button {
+    background-color: #ED274A;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+  }
+  .container{
+    text-align: center;
+  }
+
+  .menu-button {
+    background-color: transparent;
+    border: 5px;
+    color: #797979;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 45px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 50px;
+}
+.header-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.login-button {
+  background-color: #ED274A;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 50px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="checkbox"],
+input[type="date"],
+select.small-input 
+{
+  width: 20%;
+  padding: 15px; /* Aumentar o padding para aumentar o tamanho da caixa de texto */
+  border: none;
+  border-bottom: 1px solid #757575;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+  color: #757575;
+}  
+.back-button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    color: #ED274A;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: 3px solid #ED274A;
+  }
+  .centered-container {
+    text-align: center;
+  }
+
+  /* Estilo para o checkbox */
+  .centered-container input[type="checkbox"] {
+    margin-right: 5px; /* Espaço entre o checkbox e o texto da label */
+  }
+  .input-container{
+    margin-bottom: 5px;
+  }
