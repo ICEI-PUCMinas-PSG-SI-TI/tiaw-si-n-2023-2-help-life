@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+
+  ** INFORMAÇÕES ACADÊMICAS **
+
+    Tela desenvolvida: Histórico
+    Aluno responsável: Ana Beatriz Costa Viana
+    Tipo de Artefato: AI (Apresentação de Informação)
+    Disponível em: https://tiaw-helplife-historicodedoacao.ana-beatrizbe59.repl.co/
+
+  ** NOTAS ADICIONAIS
+    
+    Os arquivos de pacote do JQuery já estão nesta pasta, caso você não tenha o JQuery instalado, 
+    siga as instruções abaixo para o pleno funcionamento da interface
+  
+  INSTRUÇÕES PARA O DOWNLOAD DO JQUERY:
+
+    1. Baixe o conteúdo deste repl e abra em seu VSCode
+    2. Abra um terminal na pasta raiz
+    3. Digite uma das opções abaixo:
+          npm install jquery
+                OU
+          yarn add jquery
+  
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Help Life</title>
+
+    <!-- Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/style_telainicial.css" />
+    <script src="https://kit.fontawesome.com/121e0c0344.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <div id="sidebar" class="sidebar justify-content-center">
+      <img
+        id="img-logo"
+        src="../assets/logo-texto-coracao.png"
+        alt="Logo que direciona para home"
+      />
+
+      <form>
+        <i class="fa-solid fa-magnifying-glass" style="color: #27282b; margin-left: 20px;"></i>
+        <input type="text" id="pesquisa-funcao" />
+      </form>
+
+      <div id="bloco-botoes" class="justify-content-center">
+        <button id="encontrar-receptores" class="btn">
+          Encontrar receptores
+        </button>
+        <button id="encontra-hemocentros" class="btn">
+          Encontrar hemocentros
+        </button>
+        <button id="agendar-doação" class="btn">Agendar doação</button>
+        <button id="pre-requisitos" class="btn">Pré-requisitos</button>
+        <button id="compartilhe" class="btn">Compartilhe a causa</button>
+      </div>
+    </div>
+
+    <div class="container d-flex align-self-center justify-content-center mb-5">
+      <div class="col-3"></div>
+      <div class="col-9">
+        <div
+          id="content"
+          class="row align-self-center align-items-center justify-content-center mt-5"
+        >
+          <div id="div-img-perfil" class="row justify-content-center">
+
+          </div>
+          <div class="col">
+            <h2 id="nome-usuario"></h2>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <h2 id="tipo-sanguineo"></h2>
+          </div>
+          <hr />
+        </div>
+        <div
+          id="content"
+          class="row align-self-center align-items-center justify-content-center"
+        >
+          <h2>Sua próxima doação</h2>
+          <div id="next-donation" class="card mt-3">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7 mt-2">
+                    <h4 id="prox-hemocentro" class="card-title">Hemocentro: </h4>
+                  </div>
+                  <div class="col-5 d-flex justify-content-end">
+                    <h4 id="prox-horario" class="card-title">Horário: </h4>
+                  </div>
+                </div>
+                <hr />
+                <h5>
+                  <p id="prox-nome-receptor" class="card-text">Receptor: </p>
+                </h5>
+                <h5>
+                  <p id="prox-hospital-receptor" class="card-text">Hospital: </p>
+                </h5>
+                <div class="row mt-3">
+                  <div class="col-7">
+                    <h5><a id="link-mapa" href="#">Como chegar no local de doação</a></h5>
+                  </div>
+                  <div class="col-5 d-flex justify-content-end">
+                    <h5><a href="#">Orientações e pré-requisitos</a></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="mt-4">Suas últimas doações</h2>
+          <div id="last-donation" class="card mt-3">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-7 mt-2">
+                    <h4 id="pass-hemocentro" class="card-title">Hemocentro: </h4>
+                  </div>
+                  <div class="col-5 d-flex justify-content-end">
+                    <h4 id="pass-horario" class="card-title">Horário: </h4>
+                  </div>
+                </div>
+                <hr />
+                <h5>
+                  <p id="pass-nome-receptor" class="card-text">Receptor: </p>
+                </h5>
+                <h5>
+                  <p id="pass-hospital-receptor" class="card-text">Hospital: </p>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../scripts/script_telainicial.js"></script>
+  </body>
+</html>
