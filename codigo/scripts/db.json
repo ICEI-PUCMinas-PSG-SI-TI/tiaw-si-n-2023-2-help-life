@@ -1,0 +1,129 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "",
+      "email": "",
+      "phone": "",
+      "username": "",
+      "cpf": "",
+      "birthdate": "",
+      "password": "",
+      "bloodType": "",
+      "profilePicture": "",
+      "profile": "",
+      "receptorProfile": {
+        "hospital": 1
+      },
+      "donatorProfile": {
+        "proximaDoacao": {
+          "receptor": 2,
+          "hemocentro": 2,
+          "horario": "17:00"
+        },
+        "doacaoPassada": [
+          {
+            "receptor": 2,
+            "hemocentro": 1,
+            "horario": "15:00"
+          },
+          {
+            "receptor": 3,
+            "hemocentro": 3,
+            "horario": "15:00"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "João Castro",
+      "email": "jc_helplife@gmail.com",
+      "phone": "(31) xxxx-xxxx",
+      "username": "CAJO01",
+      "cpf": "XXX-XXX-XXX-XX",
+      "birthdate": "01/09/2010",
+      "password": "123",
+      "bloodType": "A+",
+      "profilePicture": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "profile": "2",
+      "receptorProfile": {
+        "hospital": 2,
+        "hemocentro": 1
+      },
+      "donatorProfile": {
+        "proximaDoacao": {
+          "receptor": 2,
+          "hemocentro": 3,
+          "horario": "17:00"
+        },
+        "doacaoPassada": [
+          {
+            "receptor": 2,
+            "hemocentro": 2,
+            "horario": "13:00"
+          },
+          {
+            "receptor": 3,
+            "hemocentro": 1,
+            "horario": "15:00"
+          }
+        ]
+      }
+    }
+  ],
+
+  "hemocentros": [
+    {
+      "id": 1,
+      "name": "Hemocentro de Belo Horizonte",
+      "endereco": "Alameda Ezequiel Dias, 321 - Santa Efigênia, Belo Horizonte - MG, 30130-110",
+      "localizacao": "-19.923845967962297, -43.931893861368394"
+    },
+    {
+      "id": 2,
+      "name": "Hemocentro Regional de Governador Valadares",
+      "endereco": "R. Barão do Rio Branco, 707 - Centro, Gov. Valadares - MG, 35010-030",
+      "localizacao": "-18.8512976355643, -41.947070317837195"
+    },
+    {
+      "id": 3,
+      "name": "Hemocentro Regional de Juiz de Fora",
+      "endereco": "Rua Barão de Cataguases, S/N - Santa Helena, Juiz de Fora - MG, 36015-370",
+      "localizacao": "-21.753305495104925, -43.35203353310105"
+    },
+    {
+      "id": 4,
+      "name": "Hemocentro Regional de Pouso Alegre",
+      "endereco": "R. Comendador José García, 846 - Santa Elisa, Pouso Alegre - MG, 37550-000",
+      "localizacao": "-22.2259807147344, -45.92917977356758"
+    },
+    {
+      "id": 5,
+      "name": "Hemocentro Regional de Uberaba",
+      "endereco": "Av. Getúlio Guaritá, 250 - Nossa Sra. da Abadia, Uberaba - MG, 38025-440",
+      "localizacao": "-19.75628058591114, -47.9306134153421"
+    }
+  ],
+
+  "hospitais":[
+    {
+      "id": 1,
+      "name": "Hospital João XXIII",
+      "endereco": "Av. Prof. Alfredo Balena, 400 - Centro, Belo Horizonte - MG, 30130-100",
+      "localizacao": "-19.92581069096243, -43.93102361965809"
+    },
+    {
+      "id": 1,
+      "name": "Hospital das Clínicas da UFMG",
+      "endereco": "Av. Prof. Alfredo Balena, 110 - Santa Efigênia, Belo Horizonte - MG, 30130-100",
+      "localizacao": "-19.924219295106926, -43.92815523315149"
+    },
+    {
+      "id": 1,
+      "name": "Santa Casa BH",
+      "endereco": "Av. Francisco Sales, 1111 - Santa Efigênia, Belo Horizonte - MG, 30150-221",
+      "localizacao": "-19.92451180775571, -43.925676872145274"
+    }
+  ]
+}

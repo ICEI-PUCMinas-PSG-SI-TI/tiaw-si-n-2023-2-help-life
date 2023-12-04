@@ -3,7 +3,7 @@
 
   ** INFORMAÇÕES ACADÊMICAS **
 
-    Tela desenvolvida: Histórico
+    Tela desenvolvida: Escolha de perfis usuários
     Aluno responsável: Ana Beatriz Costa Viana
     Tipo de Artefato: AI (Apresentação de Informação)
     Disponível em: https://tiaw-helplife-historicodedoacao.ana-beatrizbe59.repl.co/
@@ -37,7 +37,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles/style_telainicial.css" />
-    <script src="https://kit.fontawesome.com/121e0c0344.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/121e0c0344.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -50,7 +53,10 @@
       />
 
       <form>
-        <i class="fa-solid fa-magnifying-glass" style="color: #27282b; margin-left: 20px;"></i>
+        <i
+          class="fa-solid fa-magnifying-glass"
+          style="color: #27282b; margin-left: 20px"
+        ></i>
         <input type="text" id="pesquisa-funcao" />
       </form>
 
@@ -61,8 +67,7 @@
         <button id="encontra-hemocentros" class="btn">
           Encontrar hemocentros
         </button>
-        <button id="agendar-doação" class="btn">Agendar doação</button>
-        <button id="pre-requisitos" class="btn">Pré-requisitos</button>
+        <button id="pre-requisitos" class="btn">Perguntas frequentes</button>
         <button id="compartilhe" class="btn">Compartilhe a causa</button>
       </div>
     </div>
@@ -74,9 +79,7 @@
           id="content"
           class="row align-self-center align-items-center justify-content-center mt-5"
         >
-          <div id="div-img-perfil" class="row justify-content-center">
-
-          </div>
+          <div id="div-img-perfil" class="row justify-content-center"></div>
           <div class="col">
             <h2 id="nome-usuario"></h2>
           </div>
@@ -89,7 +92,7 @@
           id="content"
           class="row align-self-center align-items-center justify-content-center"
         >
-          <h2>Sua próxima doação</h2>
+          <h2>Sua campanha ativa</h2>
           <div id="next-donation" class="card mt-3">
             <div class="card-body">
               <div class="container">
@@ -98,37 +101,46 @@
                     <h4 id="prox-hemocentro" class="card-title">Hemocentro: </h4>
                   </div>
                   <div class="col-5 d-flex justify-content-end">
-                    <h4 id="prox-horario" class="card-title">Horário: </h4>
+                    <h4 id="statusAtual" class="card-title">Status: </h4>
                   </div>
                 </div>
                 <hr />
                 <h5>
-                  <p id="prox-nome-receptor" class="card-text">Receptor: </p>
+                  <p id="prox-nome-receptor" class="card-text">Data de criação: </p>
                 </h5>
                 <h5>
                   <p id="prox-hospital-receptor" class="card-text">Hospital: </p>
                 </h5>
                 <div class="row mt-3">
-                  <div class="col-7">
-                    <h5><a id="link-mapa" href="#">Como chegar no local de doação</a></h5>
+                  <div class="col-5">
+                    <h5>
+                      <a id="link-mapa" href="#"
+                        >Como chegar no local de doação</a
+                      >
+                    </h5>
                   </div>
-                  <div class="col-5 d-flex justify-content-end">
-                    <h5><a href="#">Orientações e pré-requisitos</a></h5>
+                  <div class="col-3 d-flex">
+                    <h5><a href="#">Compartilhar</a></h5>
+                  </div>
+                  <div class="col-4 d-flex ">
+                    <h5><a href="#">Encerrar campanha</a></h5>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <h2 class="mt-4">Suas últimas doações</h2>
+          <h2 class="mt-4">Suas campanhas desativadas
+
+          </h2>
           <div id="last-donation" class="card mt-3">
             <div class="card-body">
               <div class="container">
                 <div class="row">
                   <div class="col-7 mt-2">
-                    <h4 id="pass-hemocentro" class="card-title">Hemocentro: </h4>
+                    <h4 id="pass-hemocentro" class="card-title">Data de criação: </h4>
                   </div>
                   <div class="col-5 d-flex justify-content-end">
-                    <h4 id="pass-horario" class="card-title">Horário: </h4>
+                    <h4 id="statusEncerrada" class="card-title">Status: </h4>
                   </div>
                 </div>
                 <hr />
@@ -156,6 +168,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../scripts/script_telainicial.js"></script>
+    <script src="../scripts/script_telareceptor.js"></script>
   </body>
 </html>

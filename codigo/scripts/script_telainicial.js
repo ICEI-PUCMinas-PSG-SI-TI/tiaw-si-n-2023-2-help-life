@@ -1,6 +1,5 @@
 window.addEventListener('load', () =>{
 
-
    const userReceptorProx = {
       nomeReceptor: "João Castro",
       hospital: "Hospital das Clínicas",
