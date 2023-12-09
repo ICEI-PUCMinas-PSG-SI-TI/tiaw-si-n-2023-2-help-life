@@ -1,163 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/style_campanha.css" />
+    <script
+      src="https://kit.fontawesome.com/121e0c0344.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Help Life</title>
-</head>
+  </head>
 
-<body>
-    <div class="container d-flex flex-column flex-md-row">
-        <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
-            <a href="#">
-                <img src="Logo.png" alt="Logo Help Life" width="250" height="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-            </form>
-            <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-                <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-md-end">
-                    <li class="nav-item">
-                        <button class="btn_lateral m-3">Encontrar Receptores</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn_lateral m-3">Encontrar Hemocentros</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn_lateral m-3">Agendar Doação</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn_lateral m-3">Pré-requisitos e informações</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn_lateral m-3">Compartilhe a causa</button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <main class="ps-0 ps=md-5 flex-grow-1 mt-5 ms-5">
-            <div class="h1 pb-2 mb-4 text-black border-bottom border-black m-3">
-               Compartilhe a causa
-            </div>
-            <main>
-                
-                <input type="text" placeholder="O que deseja procurar?">
-                
-                <button type="button" >Procurar</button>
-              </section>
-              <section class="filtro">
-                  <div class="filters">
-                      <label for="blood-type">Tipo Sanguíneo:</label>
-                      <select id="blood-type">
-                          <option value="a+">A+</option>
-                          <option value="a-">A-</option>
-                          <option value="b+">B+</option>
-                          <option value="b-">B-</option>
-                          <option value="ab+">AB+</option>
-                          <option value="ab-">AB-</option>
-                          <option value="o+">O+</option>
-                          <option value="o-">O-</option>
-                      </select>
-                      <label for="regiao">Região:</label>
-                      <select id="regiao">
-                          <option value="Norte">Norte</option>
-                          <option value="Nordeste">Nordeste</option>
-                          <option value="Centro-Oeste">Centro-Oeste</option>
-                          <option value="Sudeste">Sudeste</option>
-                          <option value="Sul">Sul</option>
-                      </select>
-                  <label for="hospital"></label>
-                      <input type="text"  placeholder="Digite o hospital" id="hospital">
-                  </div>
-                  <h2>Campanhas na sua região</h2>
-                  <button type="button" onclick="funcaoDoBotao1()" >Criar Campanha</button>
-                 
-                  <div class="add-campaign">
-                    <div class="h1 pb-2 mb-4 text-black border-bottom border-black m-3"></div>
-                    <img src="Captura de tela 2023-11-07 215918.png">
-                      
-                      <!-- Formulário campanha -->
-                  </div>
-              </div>
-             
-                <h2>Criar campanha</h2>
-                <form action="#">
-                  <input type="text" placeholder="Nome da campanha">
-                  <input type="text" placeholder="Local da campanha">
-                  <input type="date" placeholder="Data da campanha">
-                  <button type="submit" onclick="botao2()">Criar </button>
-              </section>
-            </main>
-            <footer>
-             
-            </footer>
-          </body>
-          </html>
-        </main>
+  <body>
+    <div id="sidebar" class="sidebar justify-content-center">
+      <img
+        id="img-logo"
+        src="../assets/logo-texto-coracao.png"
+        alt="Logo que direciona para home"
+      />
+      <form>
+        <i
+          class="fa-solid fa-magnifying-glass"
+          style="color: #27282b; margin-left: 20px"
+        ></i>
+        <input type="text" id="pesquisa-funcao" style="width: 180px" />
+      </form>
+      <div id="bloco-botoes" class="justify-content-center">
+        <button
+          id="encontrar-receptores"
+          class="btn"
+          onclick="window.location.href = 'encontrar_receptores.html'"
+        >
+          Encontrar receptores
+        </button>
+        <button id="encontra-hemocentros" class="btn">
+          Encontrar hemocentros
+        </button>
+        <button id="agendar-doação" class="btn">Agendar doação</button>
+        <button id="pre-requisitos" class="btn">Pré-requisitos</button>
+        <button
+          id="campanhas"
+          class="btn"
+          onclick="window.location.href = 'campanhas.html'"
+        >
+          Campanhas ativas
+        </button>
+      </div>
     </div>
-
-    <footer>
-        
-          
-        <div class="accordion" id="accordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <strong>Sobre o site</strong>
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion">
-                    <div class="accordion-body">
-                        Um site de que incentiva a doação de sangue e permite aos usuários encontrar locais de
-                        doação de sangue
-                        próximos, agendar doações, receber lembretes e obter informações sobre elegibilidade para
-                        doação. Ele também
-                        pode incluir recursos para rastrear doações anteriores, receber certificados de doação e
-                        compartilhar suas
-                        realizações com a comunidade. O aplicativo visa facilitar o processo de doação de sangue,
-                        aumentando a
-                        conscientização e incentivando as pessoas a salvar vidas por meio da doação de sangue.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <strong>Integrantes do grupo</strong>
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
-                    <div class="accordion-body">
-                        <ul>
-                            <li>Ana Beatriz</li>
-                            <li>Gustavo Vilarino</li>
-                            <li>Mariana Vitória</li>
-                            <li>Matheus Barros</li>
-                            <li>Matheus Campos</li>
-                            <li>Vinicius Xavier</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="container d-flex align-self-center justify-content-center mb-5">
+      <div class="col-12">
+        <div class="h1 pb-2 mb-4 text-black border-bottom border-black m-3">
+          Compartilhe a causa
         </div>
+        <section>
+          <input type="text" placeholder="O que deseja procurar?" />
+          <button type="button">Procurar</button>
+        </section>
+        <section class="filtro">
+          <div class="filters">
+            <label for="blood-type">Tipo Sanguíneo:</label>
+            <select id="blood-type">
+              <option value="a+">A+</option>
+              <option value="a-">A-</option>
+              <option value="b+">B+</option>
+              <option value="b-">B-</option>
+              <option value="ab+">AB+</option>
+              <option value="ab-">AB-</option>
+              <option value="o+">O+</option>
+              <option value="o-">O-</option>
+            </select>
+            <label for="regiao">Região:</label>
+            <select id="regiao">
+              <option value="Norte">Norte</option>
+              <option value="Nordeste">Nordeste</option>
+              <option value="Centro-Oeste">Centro-Oeste</option>
+              <option value="Sudeste">Sudeste</option>
+              <option value="Sul">Sul</option>
+            </select>
+            <label for="hospital"></label>
+            <input type="text" placeholder="Digite o hospital" id="hospital" />
+          </div>
+        </section>
+        <section>
+          <h2>Campanhas na sua região</h2>
+          <button type="button" onclick="funcaoDoBotao1()">
+            Criar Campanha
+          </button>
 
-    </footer>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
+          <div class="add-campaign">
+            <div
+              class="h1 pb-2 mb-4 text-black border-bottom border-black m-3"
+            ></div>
+            <img src="../assets/foto-campanha.png" />
 
+            <!-- Formulário campanha -->
+          </div>
+          <h2>Criar campanha</h2>
+          <form action="#">
+            <input type="text" placeholder="Nome da campanha" />
+            <input type="text" placeholder="Local da campanha" />
+            <input type="date" placeholder="Data da campanha" />
+            <button type="submit" onclick="botao2()">Criar</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="container d-flex align-self-center justify-content-center mb-5">
+
+      <div class="col-12">
+        <div class="accordion" id="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <strong>Sobre o site</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordion"
+            >
+              <div class="accordion-body">
+                Um site de que incentiva a doação de sangue e permite aos
+                usuários encontrar locais de doação de sangue próximos, agendar
+                doações, receber lembretes e obter informações sobre
+                elegibilidade para doação. Ele também pode incluir recursos para
+                rastrear doações anteriores, receber certificados de doação e
+                compartilhar suas realizações com a comunidade. O aplicativo
+                visa facilitar o processo de doação de sangue, aumentando a
+                conscientização e incentivando as pessoas a salvar vidas por
+                meio da doação de sangue.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <strong>Integrantes do grupo</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Ana Beatriz</li>
+                  <li>Gustavo Vilarino</li>
+                  <li>Mariana Vitória</li>
+                  <li>Matheus Barros</li>
+                  <li>Matheus Campos</li>
+                  <li>Vinicius Xavier</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
 </html>
