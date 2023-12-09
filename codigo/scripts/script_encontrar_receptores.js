@@ -1,28 +1,37 @@
 function Filtrar() {
-    // Obtem os dados informados pelo usuário nos filtros
-    let fn = document.getElementById('filtroNome').value;
-    let ft = document.getElementById('filtroTipo').value;
-    let fh = document.getElementById('filtroHospital').value;
-    let fr = document.getElementById('filtroRegiao').value;
+  // Obtem os dados informados pelo usuário nos filtros
+  let fn = document.getElementById("filtroNome").value;
+  let ft = document.getElementById("filtroTipo").value;
+  let fh = document.getElementById("filtroHospital").value;
+  let fr = document.getElementById("filtroRegiao").value;
 
-    fetch("https://viniciusxr.github.io/TIAW/db.json")
-        .then(res => res.json())
-        .then(data => {
-            let card = "";
-            for (let i = 0; i < data.length; i++) {
-                let cards = data[i];
-  
-                if ((cards.nome == fn) || (cards.tipo == ft) || (cards.hospital == fh) || (cards.regiao == fr)) {
-                    card += `<div class="col">
-                    <div class="card h-100" id="card-user">
-                        <img src="${cards.foto}" alt="Foto receptor" width="120" height="120">
-                        <div class="card-body" >
-                            <h5 class="card-title" id="nome">${cards.nome}</h5>
-                            <p class="card-text" id="diagniostico">Diagniostico: ${cards.diag}</p>
-                            <p class="card-text" id="tipo">Tipo Sanguíneo: ${cards.tipo}</p>
-                            <p class="card-text" id="hospital">Hospital: ${cards.hospital}</p>
-                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Fazer
-                                doação</button>
+  fetch("https://viniciusxr.github.io/TIAW/db.json")
+    .then((res) => res.json())
+    .then((data) => {
+      let card = "";
+      for (let i = 0; i < data.length; i++) {
+        let cards = data[i];
+
+        if (
+          cards.nome == fn ||
+          cards.tipo == ft ||
+          cards.hospital == fh ||
+          cards.regiao == fr
+        ) {
+          card += `<div class="col">
+                    <div class="card" id="card-user">
+                        <div class="container d-flex align-self-center justify-content-center mb-5">
+                            <div class="card-body P">
+                                <div style="margin-left: 75px !important" id="divImg">
+                                    <img src="${cards.foto}" alt="Foto receptor" id="imgUser">
+                                </div>
+                                <h5 class="card-title" id="nome">${cards.nome}</h5>
+                                <p class="card-text" id="diagniostico">Diagniostico: ${cards.diag}</p>
+                                <p class="card-text" id="tipo">Tipo Sanguíneo: ${cards.tipo}</p>
+                                <p class="card-text" id="hospital">Hospital: ${cards.hospital}</p>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Fazer
+                                    doação</button>
+                            </div>
                         </div>
                     </div>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -45,34 +54,30 @@ function Filtrar() {
                         </div>
                     </div>
                 </div>
-                </div>`
-                    document.getElementById('cards').innerHTML = card;
-                }
-                else if(fn == '' && ft == '' && fh == '' && fr == ''){
-                    inicio();
-                }
-
-            }
-        })
-
-
+                </div>`;
+          document.getElementById("cards").innerHTML = card;
+        } else if (fn == "" && ft == "" && fh == "" && fr == "") {
+          inicio();
+        }
+      }
+    });
 }
 
 function inicio() {
-//Constrói os cards de acordo com o arquivo db.json
-    fetch("https://viniciusxr.github.io/TIAW/db.json")
-        .then(res => res.json())
-        .then(data => {
+  //Constrói os cards de acordo com o arquivo db.json
+  fetch("https://viniciusxr.github.io/TIAW/db.json")
+    .then((res) => res.json())
+    .then((data) => {
+      let card = "";
 
-            let card = "";
+      for (let i = 0; i < data.length; i++) {
+        let cards = data[i];
 
-            for (let i = 0; i < data.length; i++) {
-
-                let cards = data[i];
-
-                card += `<div class="col">
+        card += `<div class="col mb-5">
                 <div class="card h-100" id="card-user">
-                    <img src="${cards.foto}" alt="Foto receptor" width="120" height="120">
+                    <div class="container" style="text-align: center">
+                    <img src="${cards.foto}" alt="Foto receptor" width="120" height="120" id="imgUser">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title" id="nome">${cards.nome}</h5>
                         <p class="card-text" id="diagniostico">Diagniostico: ${cards.diag}</p>
@@ -102,9 +107,8 @@ function inicio() {
                     </div>
                 </div>
             </div>
-            </div>`
-            }
-            document.getElementById('cards').innerHTML = card;
-
-        })
+            </div>`;
+      }
+      document.getElementById("cards").innerHTML = card;
+    });
 }
