@@ -95,13 +95,6 @@ a{
   width: 100%;
 }
 
-.sidebar li.active a,
-.sidebar li.active a:hover {
-  color: #000;
-}
-.sidebar li a {
-  color: #fff;
-}
 
 @media (max-width: 767px) {
   #side_nav {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Logo da Empresa" class="logo" width="300px">
+    <button class="menu-button" style="width: 70px;">&#9776;</button> 
+  </header>
+
+  <div id="dataMarcada"></div>
+
+  <div class="container">
+    <div class="h1"><h1>Agendamento</h1></div>
+    <form id="login-form">
+        <div class="input-container">
+
+          <label for="dataInput">Selecione a data:</label>
+          <input type="date" id="dataInput" style="margin: 0 0 15px 0; color: #757575;">
+
+          <div class="form"></div>
+          <input type="checkbox" id="aceitarTermos" required>
+          <label for="aceitarTermos" class="termos">Eu aceito os <a href="termos.html" target="_blank">termos e condições </a></label>
+          </div>
+          
+          <button onclick="agendar()">Agendar</button>
+
+        </div> 
+
+      <script src="script.js"></script>
+
+    </body>
+
+    
+    
+  
+
+
+<a href="localstorage.html">LOCAL STORAGE</a>
+<a href="teste.html">VOLTAR</a>
+</body>
+</html>

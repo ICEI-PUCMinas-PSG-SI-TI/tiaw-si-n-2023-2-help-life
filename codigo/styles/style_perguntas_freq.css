@@ -1,0 +1,211 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#inputPesquisarMenu {
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+#img-logo {
+  width: 200px;
+  height: 33px;
+  margin: 25px;
+}
+
+#content {
+  width: 800px;
+  height: 300px;
+}
+
+#img-logo {
+  width: 200px;
+  height: 33px;
+  margin: 25px;
+}
+
+#content {
+  width: 800px;
+  height: 300px;
+}
+
+#img-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  padding: 0;
+}
+
+#bloco-botoes button {
+  background-color: #8f3bfb;
+  color: white;
+  border-radius: 25px;
+  height: 40px;
+  width: 210px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-width: 0px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+#bloco-botoes button:hover,
+#bloco-botoes button:focus {
+  background-color: #ed274a;
+  color: #ffffff;
+}
+
+#bloco-botoes button:active {
+  background: #ed274a;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+#bloco-botoes button:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#tipo-sanguineo {
+  color: #ed274a;
+}
+
+#next-donation {
+  border-width: 2px;
+  border-color: #ed274a;
+  width: 600;
+  height: 840;
+}
+
+#last-donation {
+  border-width: 2px;
+  border-color: #8f3bfb;
+}
+
+#sidebar {
+  background: #ffffff;
+  min-width: 260px;
+  max-width: 260px;
+  height: 100%;
+
+  position: fixed;
+  box-shadow: 0 0 0.75rem #bfbfbf;
+}
+.content {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+  color: #000;
+}
+.sidebar li a {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  #side_nav {
+    margin-left: -250px;
+    position: absolute;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  #side_nav.active {
+    margin-left: 0;
+  }
+}
+
+#btnPre_Requisito {
+  border-radius: 20px;
+}
+
+.btnLateral {
+  width: 190px;
+  border-radius: 20px;
+  height: 40px;
+  background-color: blueviolet;
+  border: none;
+}
+
+#conteudoTela {
+  display: grid;
+  grid-template-columns: 300px 500px;
+}
+
+.modal-header {
+  background: rgb(230, 73, 73);
+  color: #fff;
+}
+
+.modal-body form {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+
+form .inputField > div input {
+  outline: none;
+}
+
+#titulo {
+  border: none;
+  outline: none;
+  width: 75%;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+form .inputField > div textarea {
+  outline: none;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-left: 45px;
+  max-width: 100%;
+}
+
+form .inputField > div select {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-left: 45px;
+}
+
+#email {
+  margin-left: 45px;
+}
+
+#labelTitulo {
+  margin-left: 45px;
+}
+
+.modal-footer .submit {
+  font-size: 18px;
+}
+
+table tr td {
+  vertical-align: middle;
+}
+
+td button {
+  margin: 5px;
+}
+
+td button i {
+  font-size: 20px;
+}
+
+#table-perguntas {
+  width: 1000px;
+}
+
+@media screen and (max-width: 599px) {
+  #menuLateral {
+    display: none;
+  }
+}

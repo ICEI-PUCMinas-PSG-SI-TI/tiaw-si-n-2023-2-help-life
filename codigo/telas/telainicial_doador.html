@@ -42,7 +42,10 @@
 
   <body>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <div id="sidebar" class="sidebar justify-content-center">
+    <div id="sidebar" class="navbar-expand-lg justify-content-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <img
         id="img-logo"
         src="../assets/logo-texto-coracao.png"
@@ -62,10 +65,15 @@
           Encontrar hemocentros
         </button>
         <button id="agendar-doação" class="btn">Agendar doação</button>
-        <button id="pre-requisitos" class="btn">Pré-requisitos</button>
+        <button id="pre-requisitos" class="btn" onclick="window.location.href = 'perguntas_frequentes.html'">Perguntas Frequentes</button>
         <button id="campanhas" class="btn" onclick="window.location.href = 'campanhas.html'">Campanhas ativas</button>
       </div>
     </div>
+    <nav class="navbar">
+      <div class="container-fluid">
+
+      </div>
+    </nav>
 
     <div class="container d-flex align-self-center justify-content-center mb-5">
       <div class="col-3"></div>
