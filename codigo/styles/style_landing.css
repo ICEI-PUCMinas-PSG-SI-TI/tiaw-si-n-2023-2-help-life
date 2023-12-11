@@ -1,0 +1,162 @@
+html, body{
+    width: 100%;
+    height: 100%
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+#nav{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+#img-logo {
+    width: 150px;
+    height: 25px;
+}
+
+#btn-login{
+    background: #ed274a;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    height: 40px;
+    width: 110px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-width: 0px;
+    justify-content: center;
+}
+
+#btn-saiba{
+    background: white;
+    font-weight: bold;
+    color: black;
+    border-radius: 25px;
+    border-width: 3px;
+    border-color: #ed274a;
+    height: 40px;
+    width: 110px;
+    margin-left: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#btn-vermelho {
+    background: #8f3bfb;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 25px;
+    height: 50px;
+    width: 210px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-width: 0px;
+    justify-content: center;
+}
+  
+#btn-vermelho:hover {
+    background: #ed274a;
+    color: white;
+    border-radius: 25px;
+    height: 50px;
+    width: 210px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-width: 0px;
+    justify-content: center;
+}
+
+#btn-branco {
+    background: white;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    border-radius: 25px;
+    height: 50px;
+    width: 210px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-width: 3px;
+    border-color:#8f3bfb;
+    justify-content: center;
+}
+  
+#btn-branco:hover {
+    background: white;
+    color: black;
+    border-radius: 25px;
+    height: 50px;
+    width: 210px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-width: 3px;
+    border-color: #ed274a;
+    justify-content: center;
+}
+
+.tubo{
+    height: 100px;
+    width: 40px;
+    border: 6px solid #b3e7ff;
+    border-radius: 5px;
+    position: absolute;
+    right: -30px;
+}
+.bolsa{
+    position: absolute;
+    background: url(../assets/filler.png);
+    height: 280px;
+    width: 200px;
+    border: 10px solid #b3e7ff;
+    border-radius: 15px;
+    background-repeat: repeat-x;
+    animation: animate 10s linear infinite;
+}
+.borda-bolsa{
+    position: absolute;
+    height: 260px;
+    width: 180px;
+    border: 6px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    display: table;
+}
+
+.borda-bolsa h3{
+    display: table-cell;
+    vertical-align: middle;
+    line-height: normal;
+    color: white
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0 100px;
+    }
+    10%
+    {
+        background-position: 0 100px;
+    }
+    40%
+    {
+        background-position: 1000px -70px;
+    }
+    0%
+    {
+        background-position: 2000 -80px;
+    }
+}
+
