@@ -18,7 +18,7 @@
   </head>
 
   <body>
-        <div id="sidebar" class="sidebar justify-content-center">
+    <div id="sidebar" class="sidebar justify-content-center">
       <img
         id="img-logo"
         src="../assets/logo-texto-coracao.png"
@@ -26,175 +26,214 @@
       />
 
       <form>
-        <i class="fa-solid fa-magnifying-glass" style="color: #27282b; margin-left: 20px;"></i>
+        <i
+          class="fa-solid fa-magnifying-glass"
+          style="color: #27282b; margin-left: 20px"
+        ></i>
         <input type="text" id="pesquisa-funcao" />
       </form>
 
       <div id="bloco-botoes" class="justify-content-center">
-        <button id="encontrar-receptores" class="btn" onclick="window.location.href = 'encontrar_receptores.html'">
+        <button
+          id="encontrar-receptores"
+          class="btn"
+          onclick="window.location.href = 'encontrar_receptores.html'"
+        >
           Encontrar receptores
         </button>
         <button id="encontra-hemocentros" class="btn">
           Encontrar hemocentros
         </button>
         <button id="agendar-doação" class="btn">Agendar doação</button>
-        <button id="pre-requisitos" class="btn" onclick="window.location.href = 'perguntas_frequentes.html'">Perguntas Frequentes</button>
-        <button id="campanhas" class="btn" onclick="window.location.href = 'campanhas.html'">Campanhas ativas</button>
+        <button
+          id="pre-requisitos"
+          class="btn"
+          onclick="window.location.href = 'perguntas_frequentes.html'"
+        >
+          Perguntas Frequentes
+        </button>
+        <button
+          id="campanhas"
+          class="btn"
+          onclick="window.location.href = 'campanhas.html'"
+        >
+          Campanhas ativas
+        </button>
       </div>
     </div>
-    <header id="header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-5 col-sm-12 pt-4">
-            <h1>Perguntas</h1>
-          </div>
-          <div class="col-md-2 col-sm-12 pt-4 pe-4">
-            <button type="button" class="btn btn-danger" id="btnPre_Requisito">
-              <a href="#" class="link" id="linkBotaoPR">
-                Acessar Pré-Requisitos
-              </a>
-            </button>
-          </div>
-        </div>
-        <div class="row"></div>
-      </div>
-    </header>
-    <main id="conteudoTela">
-      <section id="conteudo">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 mt-5">
-              <button
-                class="btn btn-danger novaPergunta"
-                data-bs-toggle="modal"
-                data-bs-target="#form-pergunta"
-              >
-                Cadastrar Pergunta <i class="fa-solid fa-plus"></i>
-              </button>
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-12">
+          <header id="header">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-5 col-sm-12 pt-4">
+                  <h1>Perguntas</h1>
+                </div>
+                <div class="col-md-2 col-sm-12 pt-4 pe-4">
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    id="btnPre_Requisito"
+                  >
+                    <a href="#" class="link" id="linkBotaoPR">
+                      Acessar Pré-Requisitos
+                    </a>
+                  </button>
+                </div>
+              </div>
+              <div class="row"></div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div class="modal fade" id="form-pergunta">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Cadastro de Perguntas</h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
+          </header>
+          <main id="conteudoTela">
+            <section id="conteudo">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 mt-5">
+                    <button
+                      class="btn btn-danger novaPergunta"
+                      data-bs-toggle="modal"
+                      data-bs-target="#form-pergunta"
+                    >
+                      Cadastrar Pergunta <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <div class="modal fade" id="form-pergunta">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Cadastro de Perguntas</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
 
-                    <div class="modal-body">
-                      <form action="#" id="myForm">
-                        <div class="inputField">
-                          <div>
-                            <label for="titulo" id="labelTitulo"
-                              >Titulo da Dúvida:</label
+                          <div class="modal-body">
+                            <form action="#" id="myForm">
+                              <div class="inputField">
+                                <div>
+                                  <label for="titulo" id="labelTitulo"
+                                    >Titulo da Dúvida:</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name=""
+                                    id="titulo"
+                                    required
+                                  />
+                                </div>
+                                <div>
+                                  <textarea
+                                    id="descricao"
+                                    rows="8"
+                                    cols="90"
+                                    placeholder="Descreva sua dúvida"
+                                    required
+                                  ></textarea>
+                                </div>
+                                <div>
+                                  <select id="categoria" required>
+                                    <option disabled selected>
+                                      Selecione a categoria
+                                    </option>
+                                    <option value="Exames">Exames</option>
+                                    <option value="Doenças">Doenças</option>
+                                    <option value="Uso de medicamentos">
+                                      Uso de medicamentos
+                                    </option>
+                                    <option value="Tatuagens">Tatuagens</option>
+                                    <option value="Mitos e Crenças">
+                                      Mitos e Crenças
+                                    </option>
+                                    <option
+                                      value="Direito dos doadores de sangue"
+                                    >
+                                      Direito dos doadores de sangue
+                                    </option>
+                                    <option value="Cirurgia">Cirurgia</option>
+                                    <option value="Anemia">Anemia</option>
+                                    <option value="Tratamento dentário">
+                                      Tratamento dentário
+                                    </option>
+                                    <option value="Uso de bebidas alcoólicas">
+                                      Uso de bebidas alcoólicas
+                                    </option>
+                                    <option value="Outros">Outros</option>
+                                  </select>
+                                </div>
+                                <div>
+                                  <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="email"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="exampleCheck1"
+                                  >
+                                    Desejo receber por email quando a dúvida for
+                                    respondida
+                                  </label>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-danger"
+                              data-bs-dismiss="modal"
                             >
-                            <input type="text" name="" id="titulo" required />
-                          </div>
-                          <div>
-                            <textarea
-                              id="descricao"
-                              rows="8"
-                              cols="90"
-                              placeholder="Descreva sua dúvida"
-                              required
-                            ></textarea>
-                          </div>
-                          <div>
-                            <select id="categoria" required>
-                              <option disabled selected>
-                                Selecione a categoria
-                              </option>
-                              <option value="Exames">Exames</option>
-                              <option value="Doenças">Doenças</option>
-                              <option value="Uso de medicamentos">
-                                Uso de medicamentos
-                              </option>
-                              <option value="Tatuagens">Tatuagens</option>
-                              <option value="Mitos e Crenças">
-                                Mitos e Crenças
-                              </option>
-                              <option value="Direito dos doadores de sangue">
-                                Direito dos doadores de sangue
-                              </option>
-                              <option value="Cirurgia">Cirurgia</option>
-                              <option value="Anemia">Anemia</option>
-                              <option value="Tratamento dentário">
-                                Tratamento dentário
-                              </option>
-                              <option value="Uso de bebidas alcoólicas">
-                                Uso de bebidas alcoólicas
-                              </option>
-                              <option value="Outros">Outros</option>
-                            </select>
-                          </div>
-                          <div>
-                            <input
-                              type="checkbox"
-                              class="form-check-input"
-                              id="email"
-                            />
-                            <label class="form-check-label" for="exampleCheck1">
-                              Desejo receber por email quando a dúvida for
-                              respondida
-                            </label>
+                              Fechar
+                            </button>
+                            <button
+                              type="submit"
+                              form="myForm"
+                              class="btn btn-danger submit"
+                            >
+                              Salvar
+                            </button>
                           </div>
                         </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-danger"
-                        data-bs-dismiss="modal"
-                      >
-                        Fechar
-                      </button>
-                      <button
-                        type="submit"
-                        form="myForm"
-                        class="btn btn-danger submit"
-                      >
-                        Salvar
-                      </button>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <table
+                      class="table table-striped table-hover mt-3 text-center table-bordered"
+                      id="table-perguntas"
+                      max-width="100%"
+                    >
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Título</th>
+                          <th>Descrição</th>
+                          <th>Categoria</th>
+                          <th>Email</th>
+                          <th>Ação</th>
+                        </tr>
+                      </thead>
+                      <tbody id="data"></tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <table
-                class="table table-striped table-hover mt-3 text-center table-bordered"
-                id="table-perguntas"
-                max-width="100%"
-              >
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Título</th>
-                    <th>Descrição</th>
-                    <th>Categoria</th>
-                    <th>Email</th>
-                    <th>Ação</th>
-                  </tr>
-                </thead>
-                <tbody id="data"></tbody>
-              </table>
-            </div>
-          </div>
+            </section>
+          </main>
+          <footer id="footer"></footer>
         </div>
-      </section>
-    </main>
-    <footer id="footer"></footer>
-
+      </div>
+    </div>
     <div class="modal fade" id="modalReader">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">

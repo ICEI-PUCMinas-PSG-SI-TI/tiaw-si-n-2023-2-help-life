@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 100px;
+
+  }
+  
+  .input-container {
+
+    text-align: center;
+    margin: 0 0 15px 0; /* Espaçamento vertical entre cada item */
+    padding-bottom: 15px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #757575; /* Adicionar linha preta na parte inferior */
+    font-size: 16px;
+    text-align: center; /* Centralizar o texto horizontalmente */
+    outline: none; /* Remover a borda quando selecionado */
+  }
+
+  button {
+    width: 30%;
+    padding: 10px;
+    background-color: #ED274A;
+    border: none;
+    border-radius: 50px; /* Definindo a forma oval */
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  .menu-button {
+    background-color: transparent;
+    border: 5px;
+    color: #797979;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 45px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 50px;
+}
+.header-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.h1{
+    color: #8C36FB;
+}
+

@@ -22,22 +22,16 @@
   height: 300px;
 }
 
-#img-logo {
-  width: 200px;
-  height: 33px;
-  margin: 25px;
-}
-
-#content {
-  width: 800px;
-  height: 300px;
-}
-
 #img-perfil {
   width: 150px;
   height: 150px;
   border-radius: 100px;
   padding: 0;
+}
+
+#linkBotaoPR a{
+  color: white;
+  text-decoration: none;
 }
 
 #bloco-botoes button {

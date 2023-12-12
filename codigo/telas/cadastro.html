@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 <body>
+  <script src="../scripts/script_cadastro.js"></script>
     <header class="header">
         <img src="../assets/logo-texto-coracao.png" alt="Logo da Empresa" class="logo" width="300px">
         <div class="header-buttons">
@@ -69,9 +70,9 @@
           <label for="accept-terms">Li e aceito os Termos de Política e de Privacidade</label>
         </div>
       </div>
-      <button type="submit" onclick="window.location.href = 'escolhausuario.html'" class="register-button">Cadastrar-se</button>
+      <button type="submit" onclick="post(); window.location.href = 'escolhausuario.html'" class="register-button" id="cadastrar">Cadastrar-se</button>
     </form>
   </div>
-  <script src="../scripts/scripts.js"></script>
+
 </body>
 </html>
