@@ -89,9 +89,7 @@ h2 {
   width: 250px;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
-  padding-right: initial;
-}
+
 .img {
   width: 150px;
   height: 100px;
@@ -139,34 +137,94 @@ h2 {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sidebar li.active a,
-.sidebar li.active a:hover {
-  color: #000;
-}
-.sidebar li a {
-  color: #fff;
+.navbar-global .navbar-user > li > a
+{
+  color: white;
 }
 
-@media (max-width: 767px) {
-  #side_nav {
-    margin-left: -250px;
-    position: absolute;
-    min-height: 100vh;
-    z-index: 1;
-  }
-  #side_nav.active {
-    margin-left: 0;
-  }
-}
-
-#sidebar {
-  background: #ffffff;
-  min-width: 260px;
-  max-width: 260px;
-  height: 100%;
-
+.navbar-primary {
+  background-color: #ffffff;
+  bottom: 0px;
+  left: 0px;
   position: fixed;
+  width: 250px;
+  height: 100%;
+  z-index: 8;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   box-shadow: 0 0 0.75rem #bfbfbf;
+}
+
+.navbar-primary.collapsed {
+  width: 60px;
+}
+
+.navbar-primary.collapsed .glyphicon {
+  font-size: 50px;
+}
+
+.navbar-primary.collapsed .nav-label {
+  display: none;
+}
+
+.btn-expand-collapse {
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom:0;
+    width: 100%;
+    padding: 8px 0;
+    border-top:solid 1px #ed274a;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-expand-collapse:hover{
+  background-color: #ed274a;
+  color: white;
+  border-radius: 25px;
+  height: 40px;
+  width: 210px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-width: 0px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+.btn-expand-collapse {
+  background-color: #8f3bfb;
+  color: white;
+  border-radius: 25px;
+  height: 40px;
+  width: 210px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-width: 0px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+  margin:0; padding:0;
+  list-style: none;
+}
+
+.navbar-primary-menu li a {
+  display: block;
+  padding: 10px 18px;
+  text-align: left;
+  color: #ccc;
 }
 
 input[type="text"] {

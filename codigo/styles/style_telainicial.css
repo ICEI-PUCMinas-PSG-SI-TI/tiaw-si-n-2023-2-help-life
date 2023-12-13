@@ -42,7 +42,7 @@ a{
   background-color: #ffffff;
   bottom: 0px;
   left: 0px;
-  position: absolute;
+  position:fixed;
   width: 250px;
   height: 100%;
   z-index: 8;
@@ -171,29 +171,3 @@ a{
   border-color: #8f3bfb;
 }
 
-#sidebar {
-  background: #ffffff;
-  min-width: 260px;
-  max-width: 260px;
-  height: 100%;
-
-  position: fixed;
-  box-shadow: 0 0 0.75rem #bfbfbf;
-}
-.content {
-  min-height: 100vh;
-  width: 100%;
-}
-
-
-@media (max-width: 767px) {
-  #side_nav {
-    margin-left: -250px;
-    position: absolute;
-    min-height: 100vh;
-    z-index: 1;
-  }
-  #side_nav.active {
-    margin-left: 0;
-  }
-}

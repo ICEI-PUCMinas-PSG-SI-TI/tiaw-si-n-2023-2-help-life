@@ -51,7 +51,7 @@
     </div>
     <div class="input-container">
 
-      <select id="blood-type" name="blood-type" required class="small-input" style="width: 22%;">
+      <select id="blood-type" name="blood-type" required class="small-input" style="width: 22%;" onchange="EditarCadastro()">
         <option value="">Selecione o Tipo Sanguíneo</option>
         <option value="A+">A+</option>
         <option value="A-">A-</option>
@@ -70,7 +70,7 @@
           <label for="accept-terms">Li e aceito os Termos de Política e de Privacidade</label>
         </div>
       </div>
-      <button type="submit" onclick="post(); window.location.href = 'escolhausuario.html'" class="register-button" id="cadastrar">Cadastrar-se</button>
+      <button type="submit" class="register-button" id="cadastrar" onclick="EditarCadastro()">Cadastrar-se</button>
     </form>
   </div>
 

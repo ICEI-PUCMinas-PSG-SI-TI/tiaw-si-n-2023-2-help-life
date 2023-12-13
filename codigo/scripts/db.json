@@ -12,32 +12,16 @@
       "bloodType": "",
       "profilePicture": "",
       "profile": "",
-      "receptorProfile": {
-        "hospital": 1
-      },
-      "donatorProfile": {
-        "proximaDoacao": {
-          "receptor": 2,
-          "hemocentro": 2,
-          "horario": "17:00"
-        },
-        "doacaoPassada": [
-          {
-            "receptor": 2,
-            "hemocentro": 1,
-            "horario": "15:00"
-          },
-          {
-            "receptor": 3,
-            "hemocentro": 3,
-            "horario": "15:00"
-          }
-        ]
-      },
-      "perguntas":[
-
-      ]
-    },
+        "hospital": 2,
+        "hemocentro": 1,
+        "doacao": {
+          "receptor": 1,
+          "hemocentro": 1,
+          "horario": "",
+          "data": ""
+        }
+      }
+    ,
     {
       "id": 2,
       "name": "João Castro",

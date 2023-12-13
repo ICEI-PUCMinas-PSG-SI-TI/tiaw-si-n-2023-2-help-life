@@ -7,10 +7,54 @@
   <link rel="stylesheet" href="../styles/style_agendamento.css">
 </head>
 <body>
-  <header class="header">
-    <img src="../assets/logo-texto-coracao.png" alt="Logo da Empresa" class="logo" width="300px">
-    <button class="menu-button" style="width: 70px;">&#9776;</button> 
-  </header>
+  <nav class="navbar-primary">
+    <img
+      id="img-logo"
+      src="../assets/logo-texto-coracao.png"
+      alt="Logo que direciona para home"
+    />
+    <button
+      href="#"
+      class="btn-expand-collapse"
+      onclick="
+      $('.navbar-primary').toggleClass('collapsed');
+      "
+      >
+      Esconder navegação
+    </button>
+    <ul class="navbar-primary-menu" id="bloco-botoes">
+      <li>
+        <form>
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="color: #27282b; margin-left: 20px"
+          ></i>
+          <input type="text" id="pesquisa-funcao" />
+        </form>
+        <button
+          id="encontrar-receptores"
+          class="btn"
+          onclick="window.location.href = 'encontrar_receptores.html'"
+        >
+          Encontrar receptores
+          </button>
+      </li>
+      <li>
+        <button id="encontra-hemocentros" class="btn">
+          Encontrar hemocentros
+        </button>
+      </li>
+      <li>
+        <button id="agendar-doação" class="btn" onclick="window.location.href = 'agendamento.html'">Agendar doação</button>
+      </li>
+      <li>
+        <button id="pre-requisitos" class="btn" onclick="window.location.href = 'perguntas_frequentes.html'">Perguntas Frequentes</button>
+      </li>
+      <li>
+        <button id="campanhas" class="btn" onclick="window.location.href = 'campanhas.html'">Campanhas ativas</button>
+      </li>
+    </ul>
+  </nav>
 
   <div id="dataMarcada"></div>
 
@@ -26,8 +70,10 @@
           <input type="checkbox" id="aceitarTermos" required>
           <label for="aceitarTermos" class="termos">Eu aceito os <a href="termos.html" target="_blank">termos e condições </a></label>
           </div>
-          
-          <button onclick="agendar()">Agendar</button>
+          <div id="bloco-botoes">
+            <button onclick="agendar()">Agendar</button>
+          </div>
+
 
         </div> 
 

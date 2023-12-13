@@ -17,32 +17,54 @@
     <title>Help Life</title>
   </head>
   <body onload="inicio();">
-    <div id="sidebar" class="sidebar justify-content-center">
+    <nav class="navbar-primary">
       <img
         id="img-logo"
         src="../assets/logo-texto-coracao.png"
         alt="Logo que direciona para home"
       />
-      <form>
-        <i
-          class="fa-solid fa-magnifying-glass"
-          style="color: #27282b; margin-left: 20px"
-        ></i>
-        <input type="text" id="pesquisa-funcao" />
-      </form>
-
-      <div id="bloco-botoes" class="justify-content-center">
-        <button id="encontrar-receptores" class="btn" onclick="window.location.href = 'encontrar_receptores.html'">
-          Encontrar receptores
-        </button>
-        <button id="encontra-hemocentros" class="btn">
-          Encontrar hemocentros
-        </button>
-        <button id="agendar-doação" class="btn">Agendar doação</button>
-        <button id="pre-requisitos" class="btn" onclick="window.location.href = 'perguntas_frequentes.html'">Perguntas Frequentes</button>
-        <button id="campanhas" class="btn" onclick="window.location.href = 'campanhas.html'">Campanhas ativas</button>
-      </div>
-    </div>
+      <button
+        href="#"
+        class="btn-expand-collapse"
+        onclick="
+        $('.navbar-primary').toggleClass('collapsed');
+        "
+        >
+        Esconder navegação
+      </button>
+      <ul class="navbar-primary-menu" id="bloco-botoes">
+        <li>
+          <form>
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: #27282b; margin-left: 20px"
+            ></i>
+            <input type="text" id="pesquisa-funcao" />
+          </form>
+          <button
+            id="encontrar-receptores"
+            class="btn"
+            onclick="window.location.href = 'encontrar_receptores.html'"
+          >
+            Encontrar receptores
+            </button>
+        </li>
+        <li>
+          <button id="encontra-hemocentros" class="btn">
+            Encontrar hemocentros
+          </button>
+        </li>
+        <li>
+          <button id="agendar-doação" class="btn" onclick="window.location.href = 'agendamento.html'">Agendar doação</button>
+        </li>
+        <li>
+          <button id="pre-requisitos" class="btn" onclick="window.location.href = 'perguntas_frequentes.html'">Perguntas Frequentes</button>
+        </li>
+        <li>
+          <button id="campanhas" class="btn" onclick="window.location.href = 'campanhas.html'">Campanhas ativas</button>
+        </li>
+      </ul>
+    </nav>
     <div class="container d-flex flex-column flex-md-row">
       <main class="ps-0 ps=md-5 flex-grow-1 mt-5 ms-5">
         <div class="h1 pb-2 mb-4 text-black border-bottom border-black m-3">
