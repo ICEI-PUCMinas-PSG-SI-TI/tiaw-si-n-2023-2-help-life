@@ -1,0 +1,31 @@
+@media screen and (max-width: 480px) {
+    #map {
+        height: 300px;
+        width: 300px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 799px) {
+    #map {
+        height: 400px;
+        width: 400px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1299px) {
+    #map {
+        height: 500px;
+        width: 750px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #map {
+        height: 800px;
+        width: 1100;
+        justify-content: center;
+    }
+}
