@@ -13,38 +13,25 @@ window.addEventListener('load', () =>{
       horario:"16:30",
    };
 
-   const userDoador = {
-      nomeDoador: "Letícia Pereira",
-      tipoSanguineo: "O+",
-      fotoPerfil:"https://images.unsplash.com/photo-1608229330163-deab857ea5b7?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      proximaDoacao: {
-         hemocentro: "Hemominas BH",
-         horario:"15:00",
-      },
-      doacaoPassada: {
-         hemocentro: "Hemominas BH",
-         horario:"15:00",
-      },
-
-   };
-
-   const userD = JSON.stringify(userDoador);
+   var usuarioL = localStorage.getItem("users");
+   var agendamentoL = localStorage.getItem("agendamentos");
+   var usuario = JSON.parse(usuarioL);
+   var agendamento = JSON.parse(agendamentoL);
    const userRProx = JSON.stringify(userReceptorProx);
    const userRPass = JSON.stringify(userReceptorPass);
 
-   localStorage.setItem("userDoador", userD);
    localStorage.setItem("userReceptorProx", userRProx);
    localStorage.setItem("userReceptorPass", userRPass);
 
-   renderDoador(userDoador);
-   renderReceptorProx(userReceptorProx);
-   renderReceptorPass(userReceptorPass);
+   renderDoador(usuario[0]);
+   renderReceptorProx(agendamento[1]);
+   //renderReceptorPass(userReceptorPass);
 });
 
 function renderDoador(item) {
    // Adicionando uma div com o item e a quantidade na div .items
-   $('#nome-usuario').append(`${item.nomeDoador}`);
-   $('#tipo-sanguineo').append(`${item.tipoSanguineo}`);
+   $('#nome-usuario').append(`${item.name}`);
+   $('#tipo-sanguineo').append(`${item.bloodType}`);
    $('#div-img-perfil').append(`<img id="img-perfil" src="${item.fotoPerfil}" alt="Foto de perfil"/>`);
  };
 
@@ -53,7 +40,7 @@ function renderReceptorProx(item) {
    $('#prox-nome-receptor').append(`${item.nomeReceptor}`);
    $('#prox-hospital-receptor').append(`${item.hospital}`);
    $('#prox-hemocentro').append(`${item.hemocentro}`); 
-   $('#prox-horario').append(`${item.horario}`); 
+   $('#prox-horario').append(`${item.dataDoacao}`); 
 };
 
 function renderReceptorPass(item) {

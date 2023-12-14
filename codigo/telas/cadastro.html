@@ -51,7 +51,7 @@
     </div>
     <div class="input-container">
 
-      <select id="blood-type" name="blood-type" required class="small-input" style="width: 22%;" onchange="EditarCadastro()">
+      <select id="blood-type" name="blood-type" required class="small-input" style="width: 22%;">
         <option value="">Selecione o Tipo Sanguíneo</option>
         <option value="A+">A+</option>
         <option value="A-">A-</option>
@@ -65,14 +65,14 @@
     </div>
 
     <div class="centered-container"> <!-- Container centralizado para o checkbox e a label -->
-        <div class="input-container">
-          <input type="checkbox" id="accept-terms" required style="margin-right: -130px;">
-          <label for="accept-terms">Li e aceito os Termos de Política e de Privacidade</label>
-        </div>
+      <div class="input-container">
+        <input type="checkbox" id="accept-terms" required style="margin-right: -130px;">
+        <label for="accept-terms">Li e aceito os Termos de Política e de Privacidade</label>
       </div>
-      <button type="submit" class="register-button" id="cadastrar" onclick="EditarCadastro()">Cadastrar-se</button>
-    </form>
-  </div>
-
+    </div>
+    <button type="submit" class="register-button">Cadastrar-se</button>
+  </form>
+</div>
+<script src="../scripts/script_cadastro.js"></script>
 </body>
 </html>

@@ -9,57 +9,9 @@
       "cpf": "",
       "birthdate": "",
       "password": "",
-      "bloodType": "",
-      "profilePicture": "",
-      "profile": "",
-        "hospital": 2,
-        "hemocentro": 1,
-        "doacao": {
-          "receptor": 1,
-          "hemocentro": 1,
-          "horario": "",
-          "data": ""
-        }
-      }
-    ,
-    {
-      "id": 2,
-      "name": "João Castro",
-      "email": "jc_helplife@gmail.com",
-      "phone": "(31) xxxx-xxxx",
-      "username": "CAJO01",
-      "cpf": "XXX-XXX-XXX-XX",
-      "birthdate": "01/09/2010",
-      "password": "123",
-      "bloodType": "A+",
-      "profilePicture": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "profile": "2",
-      "receptorProfile": {
-        "hospital": 2,
-        "hemocentro": 1
-      },
-      "donatorProfile": {
-        "proximaDoacao": {
-          "receptor": 2,
-          "hemocentro": 3,
-          "horario": "17:00"
-        },
-        "doacaoPassada": [
-          {
-            "receptor": 2,
-            "hemocentro": 2,
-            "horario": "13:00"
-          },
-          {
-            "receptor": 3,
-            "hemocentro": 1,
-            "horario": "15:00"
-          }
-        ]
-      }
+      "bloodType": ""
     }
   ],
-
   "hemocentros": [
     {
       "id": 1,
@@ -92,8 +44,7 @@
       "localizacao": "-19.75628058591114, -47.9306134153421"
     }
   ],
-
-  "hospitais":[
+  "hospitais": [
     {
       "id": 1,
       "name": "Hospital João XXIII",
@@ -113,7 +64,31 @@
       "localizacao": "-19.92451180775571, -43.925676872145274"
     }
   ],
-  "perguntas":{
-    
-  }
+  "user-receptor":[
+    {
+      "user-ref": 1,
+      "hospital": ""
+    }
+  ],
+  "user-doador":[
+    {
+      "user-ref": 1
+    }
+  ],
+  "doacoes": [
+    {
+      "user-ref": 1,
+      "receptor": 2,
+      "hemocentro": 1,
+      "horario": "",
+      "data": ""
+    },
+    {
+      "user-ref": 1,
+      "receptor": 3,
+      "hemocentro": 3,
+      "horario": "",
+      "data": ""
+    }
+  ]
 }
