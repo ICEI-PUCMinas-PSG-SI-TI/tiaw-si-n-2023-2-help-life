@@ -78,15 +78,8 @@
   "doacoes": [
     {
       "user-ref": 1,
-      "receptor": 2,
-      "hemocentro": 1,
-      "horario": "",
-      "data": ""
-    },
-    {
-      "user-ref": 1,
-      "receptor": 3,
-      "hemocentro": 3,
+      "receptor": 0,
+      "hemocentro": 0,
       "horario": "",
       "data": ""
     }
