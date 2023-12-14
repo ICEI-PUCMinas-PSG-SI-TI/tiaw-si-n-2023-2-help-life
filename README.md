@@ -18,5 +18,7 @@ Um aplicativo de que incentiva a doação de sangue e permite aos usuários enco
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Acesse o link para utilizar a aplicação:
+
+https://ctrlanabia.github.io/help-life.github.io/codigo/telas/index.html
 
